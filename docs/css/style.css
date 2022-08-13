@@ -1,0 +1,192 @@
+
+/** HEADER */
+
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+a, p, span, h5, h6, li {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+
+
+h1, h4 {
+    font-family: 'Akira Expanded', sans-serif;    
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #666;
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+
+.menubar-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.menubar-desktop {
+    background: coral; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    padding: 10px 20px;
+}
+
+
+.menubar-desktop li {
+    background: coral;
+    border: none;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.menubar-desktop li  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.profile_image{
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+.main-content {
+    padding-left: 20%;
+    background: #000000;
+    margin-bottom: 0;
+}
+
+
+div {
+    display: block;
+}
+
+.sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -110px;
+    top: 230px;
+    width: 210px;
+    z-index: 1100;
+    padding-right: 200px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1.5;    
+}
+
+
+
+section {
+    padding: 0 10%;
+    padding-top: 10%;
+    color: white;
+    height: 100vh;
+}
+section h4,h1, h6 {
+    text-transform: uppercase;    
+}
+section h4 {
+    font-size: 45px;
+    color: coral;
+    padding-bottom: 10px;
+}
+section h5 {
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+
+
+/** ABOUT SECTION */
+
+#about h1 {
+    font-size: 72px;
+    color: coral;
+    padding-bottom: 10px;
+}
+
+.ht {
+  display: flex;
+  align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a .fa-eye {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/** PROJECT SECTION */
+
+#project img {
+    width: 30%;
+    height: 40%;
+    margin: 10px;
+}
+
+.icons-s {
+    font-size: 38px;
+    padding-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.icono-social-contacto {
+    color: white;
+}
+
+
+/** MOBILE RESPONSIVE */
+
+@media screen and (max-width:780px) {
+    .menubar-mobile{
+        display: block;
+    }
+
+    .menubar-desktop{
+        display: none;
+    }
+    .main-content{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    #project img{
+        width: 100%;
+    }
+
+    section{
+        height: 100%;
+    }
+}
+
+
+
+
